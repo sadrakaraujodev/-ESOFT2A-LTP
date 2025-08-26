@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+       /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #b22222; /* tom vermelho ferro */
+}
+
+/* Blocos */
+.bloco {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.bloco h2 {
+  margin-bottom: 10px;
+  color: #b22222;
+  font-size: 1.3rem;
+}
+
+/* Imagem */
+.imagem {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+}
+
+/* Listas */
+ul, ol {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* Tabela */
+.avaliacao table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.avaliacao td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background: #b22222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8b1a1a;
+}
+
+/* Formulário */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  background: #b22222;
+  color: #fff;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #8b1a1a;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+    </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homem de Ferro (2008)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1>Homem de Ferro (2008)</h1>
+    </header>
+
+    <main class="conteudo">
+
+      <div class="bloco sinopse">
+        <h2>Sinopse</h2>
+        <p>
+          O filme que iniciou tudo, dirigido por Jon Favreau, apresentou ao mundo a genialidade de Tony Stark e sua transformação em Homem de Ferro. 
+          O elenco estelar, além de Robert Downey Jr., inclui Gwyneth Paltrow como Pepper Potts e Jeff Bridges como Obadiah Stane. 
+          A trama gira em torno da jornada de Stark de magnata egocêntrico para herói tecnológico, sendo considerado o pontapé inicial do MCU.
+        </p>
+        <div class="imagem">
+          <img src="https://img.odcdn.com.br/wp-content/uploads/2023/09/imagem_2023-09-28_165351201.png" alt="Homem de Ferro 2008">
+        </div>
+      </div>
+
+      <div class="bloco ficha">
+        <h2>Ficha Técnica</h2>
+        <ul>
+          <li><b>Diretor:</b> Jon Favreau</li>
+          <li><b>Elenco:</b> Robert Downey Jr., Gwyneth Paltrow, Terrence Howard</li>
+          <li><b>Gênero:</b> Ação / Ficção Científica / Aventura / Super-herói</li>
+          <li><b>Duração:</b> 2h06min</li>
+        </ul>
+      </div>
+
+      <div class="bloco motivos">
+        <h2>Por que assistir?</h2>
+        <ol>
+          <li>Início do MCU</li>
+          <li>Atuação marcante</li>
+          <li>Equilíbrio entre ação e humor</li>
+          <li>História inspiradora</li>
+        </ol>
+      </div>
+
+      <div class="bloco avaliacao">
+        <h2>Avaliação</h2>
+        <table>
+          <tr>
+            <td>Rotten Tomatoes</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>IMDb</td>
+            <td>7,5</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="bloco trailer">
+        <h2>Trailer Oficial</h2>
+        <a href="https://www.youtube.com/watch?v=8ugaeA-nMTc" target="_blank" class="btn">▶️ Assistir no YouTube</a>
+      </div>
+
+      <div class="bloco formulario">
+        <h2>Deixe sua opinião!</h2>
+        <form>
+          <label for="nome">Seu nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">Seu e-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="nota">Sua nota para o filme:</label>
+          <select id="nota" name="nota">
+            <option value="10">10 - Obra-Prima</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+          </select>
+
+          <button type="submit">Enviar Avaliação</button>
+        </form>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 - Projeto Filmes MCU</p>
+    </footer>
+
+  </div>
+</body>
+</html>
